@@ -9,6 +9,7 @@
 import Foundation
 
 class TownPeople : Characters {
+    
     private var _name: String = "Town People name"
     private var _workingStartTime: Int = 8
     private var _workingEndTime: Int = 20

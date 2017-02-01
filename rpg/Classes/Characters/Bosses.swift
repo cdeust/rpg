@@ -83,7 +83,7 @@ class Bosses : Enemies {
         }
     }
     
-    override func attack(attack: Int) -> Bool {
+    override func attack(_ attack: Int) -> Bool {
         if attack >= immunity {
             return super.attack(attack)
         } else {

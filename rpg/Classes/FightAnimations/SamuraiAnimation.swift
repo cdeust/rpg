@@ -33,7 +33,7 @@ extension FightViewController {
         self.samuraiImg.animationRepeatCount = 1
         self.samuraiImg.startAnimating()
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
+        globalTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
     }
     
     func stabAnimation() {
@@ -46,7 +46,7 @@ extension FightViewController {
         self.samuraiImg.animationRepeatCount = 1
         self.samuraiImg.startAnimating()
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
+        globalTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
     }
     
     func comboAnimation() {
@@ -59,7 +59,7 @@ extension FightViewController {
         self.samuraiImg.animationRepeatCount = 1
         self.samuraiImg.startAnimating()
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
+        globalTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
     }
     
     func defendAnimation() {
@@ -72,7 +72,7 @@ extension FightViewController {
         self.samuraiImg.animationRepeatCount = 1
         self.samuraiImg.startAnimating()
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
+        globalTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
     }
     
     func escapeAnimation() {
@@ -85,7 +85,7 @@ extension FightViewController {
         self.samuraiImg.animationRepeatCount = 0
         self.samuraiImg.startAnimating()
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
+        globalTimer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(FightViewController.idleAnimation), userInfo: nil, repeats: false)
     }
 }
 

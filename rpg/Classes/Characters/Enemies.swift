@@ -32,7 +32,7 @@ class Enemies: Characters {
         }
     }
     
-    func loot (type: String) -> String? {
+    func loot (_ type: String) -> String? {
         if !isAlive {
             let rand = Int(arc4random_uniform(UInt32(lootTable.count)))
             return lootTable[rand]

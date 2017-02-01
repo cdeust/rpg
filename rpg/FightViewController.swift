@@ -17,7 +17,7 @@ class FightViewController: UIViewController {
     @IBOutlet weak var comboBtn: UIButton!
     @IBOutlet weak var escapeBtn: UIButton!
     
-    var globalTimer: NSTimer!
+    var globalTimer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,19 +35,19 @@ class FightViewController: UIViewController {
 
 extension FightViewController {
     
-    @IBAction func attackPressed(sender: UIButton) {
+    @IBAction func attackPressed(_ sender: UIButton) {
         self.attackAnimation()
     }
     
-    @IBAction func defendPressed(sender: UIButton) {
+    @IBAction func defendPressed(_ sender: UIButton) {
         self.defendAnimation()
     }
     
-    @IBAction func comboPressed(sender: UIButton) {
+    @IBAction func comboPressed(_ sender: UIButton) {
         self.comboAnimation()
     }
     
-    @IBAction func escapePressed(sender: UIButton) {
+    @IBAction func escapePressed(_ sender: UIButton) {
         self.escapeAnimation()
     }
 }

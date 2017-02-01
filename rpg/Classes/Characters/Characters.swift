@@ -134,7 +134,7 @@ class Characters {
         self._attack = startingAttack
     }
     
-    func attack(attack: Int) -> Bool {
+    func attack(_ attack: Int) -> Bool {
         self._hp -= attack
         return true
     }
