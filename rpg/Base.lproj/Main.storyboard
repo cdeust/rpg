@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8nF-R5-8nx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="rpg" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="610"/>
+        </scene>
+        <!--Fight View Controller-->
+        <scene sceneID="VG1-fb-KYz">
+            <objects>
+                <viewController id="8nF-R5-8nx" customClass="FightViewController" customModule="rpg" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7cH-WC-Boq"/>
+                        <viewControllerLayoutGuide type="bottom" id="TLI-Dw-cHH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UAi-8A-M56">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Idle_0" translatesAutoresizingMaskIntoConstraints="NO" id="L1J-K2-seg">
+                                <rect key="frame" x="35" y="440" width="146" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="2Ze-87-pxW"/>
+                                    <constraint firstAttribute="height" constant="110" id="vp8-eO-bEH"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5ka-8k-Y1r">
+                                <rect key="frame" x="35" y="35" width="150" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-6p-VgR">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="BSl-92-cEb"/>
+                                            <constraint firstAttribute="width" constant="150" id="F8G-5r-x0m"/>
+                                        </constraints>
+                                        <state key="normal" title="Attack"/>
+                                        <connections>
+                                            <action selector="attackPressed:" destination="8nF-R5-8nx" eventType="touchUpInside" id="X05-Xj-d80"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k64-Mz-Q5S">
+                                        <rect key="frame" x="0.0" y="40" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="bba-Oh-p3a"/>
+                                            <constraint firstAttribute="height" constant="30" id="ecB-nD-FOM"/>
+                                        </constraints>
+                                        <state key="normal" title="Defend"/>
+                                        <connections>
+                                            <action selector="defendPressed:" destination="8nF-R5-8nx" eventType="touchUpInside" id="gW7-yn-wYs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7f8-br-zCz">
+                                        <rect key="frame" x="0.0" y="80" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="CIK-Lk-Qui"/>
+                                            <constraint firstAttribute="height" constant="30" id="ef7-3A-Sut"/>
+                                        </constraints>
+                                        <state key="normal" title="Special Attack"/>
+                                        <connections>
+                                            <action selector="comboPressed:" destination="8nF-R5-8nx" eventType="touchUpInside" id="vea-5q-5Ar"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-D3-kig">
+                                        <rect key="frame" x="0.0" y="120" width="150" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="jDG-fn-I1o"/>
+                                            <constraint firstAttribute="height" constant="30" id="l37-A2-egE"/>
+                                        </constraints>
+                                        <state key="normal" title="Escape"/>
+                                        <connections>
+                                            <action selector="escapePressed:" destination="8nF-R5-8nx" eventType="touchUpInside" id="kVs-0J-yEx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ka-8k-Y1r" firstAttribute="top" secondItem="7cH-WC-Boq" secondAttribute="bottom" constant="15" id="8Lw-JA-wmd"/>
+                            <constraint firstItem="L1J-K2-seg" firstAttribute="leading" secondItem="UAi-8A-M56" secondAttribute="leadingMargin" constant="15" id="Aqz-G5-dwo"/>
+                            <constraint firstItem="5ka-8k-Y1r" firstAttribute="leading" secondItem="UAi-8A-M56" secondAttribute="leadingMargin" constant="15" id="e54-1W-UQD"/>
+                            <constraint firstItem="TLI-Dw-cHH" firstAttribute="top" secondItem="L1J-K2-seg" secondAttribute="bottom" constant="50" id="fy4-jl-fhe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attackBtn" destination="zaq-6p-VgR" id="yqZ-Gx-Aho"/>
+                        <outlet property="comboBtn" destination="7f8-br-zCz" id="zmJ-qB-ccG"/>
+                        <outlet property="defenseBtn" destination="k64-Mz-Q5S" id="kEq-to-Xbu"/>
+                        <outlet property="escapeBtn" destination="DtS-D3-kig" id="dL6-eV-O1S"/>
+                        <outlet property="samuraiImg" destination="L1J-K2-seg" id="RNK-KB-T2U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3u-BH-ZHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="610"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Idle_0" width="274" height="205"/>
+    </resources>
+</document>
