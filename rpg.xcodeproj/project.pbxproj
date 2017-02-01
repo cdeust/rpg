@@ -141,11 +141,11 @@
 		B1B3B7CF1CF78D9F00EBA4F4 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
+				B1B3B7DA1CF78EEE00EBA4F4 /* Characters.swift */,
 				B1797BB91D0267DB008B482A /* TownPeople.swift */,
 				B1797BBA1D0267DB008B482A /* Heroes.swift */,
 				B1797BBB1D0267DB008B482A /* Pets.swift */,
 				B1B3B7D91CF78EEE00EBA4F4 /* Enemies.swift */,
-				B1B3B7DA1CF78EEE00EBA4F4 /* Characters.swift */,
 				B1B3B7D61CF78E5000EBA4F4 /* Bosses.swift */,
 			);
 			name = Characters;
@@ -162,8 +162,8 @@
 		B1CB10C71D0268E400396669 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				B1CB10C81D0268F300396669 /* Equipements.swift */,
 				B1CB10C91D0268F300396669 /* Items.swift */,
+				B1CB10C81D0268F300396669 /* Equipements.swift */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -228,6 +228,7 @@
 				TargetAttributes = {
 					B1B3B7A71CF78CCA00EBA4F4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 739FYFHB3R;
 						LastSwiftMigration = 0820;
 					};
 					B1B3B7BE1CF78CCA00EBA4F4 = {
@@ -427,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 739FYFHB3R;
 				INFOPLIST_FILE = rpg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdeust.rpg;
@@ -439,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 739FYFHB3R;
 				INFOPLIST_FILE = rpg/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdeust.rpg;
